@@ -220,6 +220,7 @@ cc_library {
         "-Wshadow-field-in-constructor-modified",
         "-Wshadow-uncaptured-local",
         "-Wthread-safety",
+        "-O3",
     ],
     afdo: true,
     srcs: [
