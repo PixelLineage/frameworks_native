@@ -79,6 +79,8 @@ cc_defaults {
         "-fstandalone-debug",
 
         //"-DLOG_NDEBUG=0",
+
+        "-O3",
     ],
 
     cppflags: [
@@ -88,6 +90,7 @@ cc_defaults {
         "-Wno-float-equal",
         "-Wno-global-constructors",
         "-Wno-zero-length-array",
+        "-O3",
     ],
 }
 

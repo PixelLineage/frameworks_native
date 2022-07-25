@@ -104,6 +104,7 @@ cc_defaults {
         "-Wthread-safety",
         "-Wunreachable-code",
         "-Wunused",
+        "-O3",
     ],
 }
 
@@ -121,6 +122,7 @@ cc_defaults {
     cflags: [
         "-DEGL_EGLEXT_PROTOTYPES",
         "-DGL_GLEXT_PROTOTYPES",
+        "-O3",
     ] + select(soong_config_variable("qtidisplay", "headers_namespace"), {
         any @ flag_val: ["-DQCOM_UM_FAMILY"],
         default: [],
@@ -342,6 +344,7 @@ cc_defaults {
     ],
     cflags: [
         "-DLOG_TAG=\"SurfaceFlinger\"",
+        "-O3",
     ] + select(soong_config_variable("surfaceflinger", "register_displayservice"), {
         true: ["-DREGISTER_DISPLAYSERVICE"],
         default: [],
